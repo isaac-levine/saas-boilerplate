@@ -41,12 +41,6 @@ model Session {
   user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
 }
 
-// enum Role {
-//   ADMIN
-//   USER
-//   SELLER
-// }
-
 model User {
   id                  String    @id @default(cuid()) @map("_id")
   name                String?   @default("")
@@ -56,7 +50,6 @@ model User {
   emailVerified       DateTime?
   onboarded           Boolean?  @default(false)
   image               String?   @default("")
-  // role          Role      @default(USER)
   accounts            Account[]
   sessions            Session[]
   likes               Like[]

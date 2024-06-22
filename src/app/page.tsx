@@ -10,10 +10,12 @@ import TechStackSection from "./home/TechStackSection";
 import FrequentlyAskedQuestionsSection from "./home/FrequentlyAskedQuestionsSection";
 import MoreThanJustABoilerplateSection from "./home/MoreThanJustABoilerplateSection";
 
+// This is the home page / landing page.
+// Different components of this page are contained in the `home` folder.
 export default function Component() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <title>Home • Boilerbase</title>
+      <title>Home • Social Media App</title>
       <main className="flex-1">
         <HeroSection />
         {/* <CompaniesSection /> */}

@@ -31,12 +31,12 @@ const HeroSection = () => {
           <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold sm:text-5xl xl:text-6xl">
-                Ship your SaaS app 90% faster with{" "}
-                <span className="text-primary font-extrabold">Boilerbase</span>.
+                This should be your value proposition or{" "}
+                <span className="text-primary font-extrabold">slogan</span>.
               </h1>
               <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400 mx-auto lg:mx-0">
-                Ship your SaaS MVP in hours, not months with a personalized
-                boilerplate from Boilerbase.
+                Here, you can choose to provide a subheading or a brief
+                description of what your product is.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row mx-auto lg:mx-0">

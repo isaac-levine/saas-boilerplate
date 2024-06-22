@@ -4,11 +4,9 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import HeroSection from "./home/HeroSection";
 import FeaturesSection from "./home/FeaturesSection";
 import TestimonialsSection from "./home/TestimonialsSection";
-import PricingSection from "./home/PricingSection";
-import CompaniesSection from "./home/CompaniesSection";
-import TechStackSection from "./home/TechStackSection";
+import BottomCallToAction from "./home/BottomCallToAction";
 import FrequentlyAskedQuestionsSection from "./home/FrequentlyAskedQuestionsSection";
-import MoreThanJustABoilerplateSection from "./home/MoreThanJustABoilerplateSection";
+import WhatWereAllAbout from "./home/WhatWereAllAbout";
 
 // This is the home page / landing page.
 // Different components of this page are contained in the `home` folder.
@@ -19,12 +17,11 @@ export default function Component() {
       <main className="flex-1">
         <HeroSection />
         {/* <CompaniesSection /> */}
-        <TechStackSection />
-        <MoreThanJustABoilerplateSection />
+        <WhatWereAllAbout />
         <FeaturesSection />
         <TestimonialsSection />
         <FrequentlyAskedQuestionsSection />
-        <PricingSection />
+        <BottomCallToAction />
       </main>
     </div>
   );

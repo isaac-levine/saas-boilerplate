@@ -5,7 +5,6 @@ import { authOptions } from "@/lib/auth/options";
 import { buttonVariants } from "@/components/ui/button";
 
 import { Gauge, LayoutDashboard, FlaskConical, Settings } from "lucide-react";
-import BoilerbaseIconBlocks from "@/components/BoilerbaseIconBlocks";
 
 export default async function DashboardLayout({
   children,
@@ -72,7 +71,6 @@ export default async function DashboardLayout({
             className="flex items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-800"
             prefetch={false}
           >
-            <BoilerbaseIconBlocks size={28} />
             <span>Get Boilerplate</span>
           </Link>
           <hr className="border-t border-gray-700" />

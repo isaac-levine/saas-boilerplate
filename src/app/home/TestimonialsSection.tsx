@@ -11,7 +11,7 @@ const TestimonialsSection = () => {
                 Testimonials
               </div>
               <h2 className="text-3xl font-bold sm:text-5xl">
-                What our users say
+                Many happy farmers
               </h2>
               <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Hear from developers who have used Boilerbase to build their
@@ -32,16 +32,15 @@ const TestimonialsSection = () => {
                   />
                 </div>
                 <div>
-                  <div className="text-base font-medium">John Doe</div>
+                  <div className="text-base font-medium">Anyonymous</div>
                   <div className="text-sm text-gray-500 dark:text-gray-400">
-                    Founder, Acme Inc.
+                    Student, University of Ricefield
                   </div>
                 </div>
               </div>
               <p className="text-gray-500 dark:text-gray-400">
-                &quot;Boilerbase has been a game-changer for my team. The\n
-                pre-built boilerplate code has helped us launch our app\n much
-                faster than we could have on our own.&quot;
+                &quot; I love Ricefield so much! I would recommend it to anyone
+                that wants to connect with likeminded college students! &quot;
               </p>
             </div>
             <div className="grid gap-4 bg-white dark:bg-gray-900 rounded-lg shadow-lg bg-background dark:bg-foreground/5 border-t p-8 transition-transform duration-300 hover:scale-105">
@@ -56,16 +55,15 @@ const TestimonialsSection = () => {
                   />
                 </div>
                 <div>
-                  <div className="text-base font-medium">Jane Smith</div>
+                  <div className="text-base font-medium">Anyonymous</div>
                   <div className="text-sm text-gray-500 dark:text-gray-400">
-                    CTO, Globex Corp.
+                    Student, University of Ricefield
                   </div>
                 </div>
               </div>
               <p className="text-gray-500 dark:text-gray-400">
-                &quot;Boilerbase has saved us countless hours of setup and\n
-                configuration. The customizable templates have allowed us\n to
-                quickly build and deploy our app.&quot;
+                &quot; I love Ricefield so much! I would recommend it to anyone
+                that wants to connect with likeminded college students! &quot;
               </p>
             </div>
           </div>

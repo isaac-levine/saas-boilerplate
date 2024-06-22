@@ -12,12 +12,13 @@ const FeaturesSection = () => {
                 Key Features
               </div> */}
               <h2 className="text-3xl font-bold sm:text-5xl">
-                By developers, for developers.
+                Some of our key features
               </h2>
               <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                We are not an outsourcing agency. We offer a custom-tailored
-                boilerplate to let you skip through all of the basic
-                integrations and set up that typically slows founders down.
+                Here you should give a little more detail about the features of
+                your product and why they are important. You can also talk about
+                the benefits of using your product and how it can help your
+                customers.
               </p>
             </div>
           </div>

@@ -2,7 +2,6 @@
 import React from "react";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
-import BoilerbaseIconBlocks from "@/components/BoilerbaseIconBlocks";
 import { ChevronRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
@@ -15,7 +14,7 @@ const HeroSection = () => {
 
   const handleGetStartedClick = () => {
     if (user) {
-      const pricingSection = document.getElementById("pricing");
+      const pricingSection = document.getElementById("cta");
       if (pricingSection) {
         pricingSection.scrollIntoView({ behavior: "smooth" });
       }
@@ -31,12 +30,11 @@ const HeroSection = () => {
           <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
             <div className="space-y-2">
               <h1 className="text-3xl font-bold sm:text-5xl xl:text-6xl">
-                This should be your value proposition or{" "}
-                <span className="text-primary font-extrabold">slogan</span>.
+                Welcome to{" "}
+                <span className="text-primary font-extrabold">Ricefield</span>.
               </h1>
               <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400 mx-auto lg:mx-0">
-                Here, you can choose to provide a subheading or a brief
-                description of what your product is.
+                The cool anonymous social media platform for college students.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row mx-auto lg:mx-0">
@@ -48,20 +46,11 @@ const HeroSection = () => {
                 })} rounded-lg shadow-lg border-t  transition-transform duration-300 hover:scale-105`}
               >
                 Get Started {"  "}
-                {/* <BoilerbaseIconBlocks size={24} /> */}
                 <ChevronRight size={24} />
               </Button>
               <QualityPromise />
             </div>
           </div>
-          {/* <img
-            src="/boilerbase-icon-transparent.png"
-            width="500"
-            height="500"
-            alt="Hero"
-            className="hidden lg:block mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square shadow"
-          /> */}
-          <BoilerbaseIconBlocks size={300} />
         </div>
       </MaxWidthWrapper>
     </section>

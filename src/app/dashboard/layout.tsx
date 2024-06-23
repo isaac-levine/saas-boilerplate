@@ -19,7 +19,8 @@ export default async function DashboardLayout({
   if (!user) {
     return (
       <div className="flex flex-col items-center h-screen ">
-        <title>Dashboard • BoilerBase</title>
+        {/* TODO: change the second part of this <title> tag to your Company name */}
+        <title>Dashboard • MyCompany</title>
         <div className="max-w-md p-8 bg-white rounded-lg shadow-lg dark:bg-gray-800 mt-12 mx-8">
           <div className="space-y-4 text-center">
             <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100">
@@ -46,7 +47,8 @@ export default async function DashboardLayout({
   // User is signed in, so we can display the dashboard
   return (
     <div className="flex min-h-screen">
-      <title>Dashboard • BoilerBase</title>
+      {/* TODO: change the second part of this <title> tag to your Company name */}
+      <title>Dashboard • MyCompany</title>
       <div className="dark:bg-gray-900 dark:text-white w-72 p-6 space-y-6 hidden sm:block">
         <Link
           href="/dashboard"

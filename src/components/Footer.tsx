@@ -1,7 +1,8 @@
 import Link from "next/link";
-import BoilerbaseIcon from "./BoilerbaseIcon";
+import CompanyIcon from "./CompanyIcon";
 import MaxWidthWrapper from "./MaxWidthWrapper";
 
+// The footer that shows at the bottom of every page
 export const Footer = () => {
   return (
     <footer className="bg-background dark:bg-foreground/5 backdrop-blur-md flex-grow-0 border-t border-foreground/10">
@@ -10,9 +11,11 @@ export const Footer = () => {
           <div className="flex items-center justify-center m-auto ml-0 gap-2 ">
             <Link href="#" passHref>
               <div className="flex items-center gap-2 cursor-pointer">
-                <BoilerbaseIcon size={35} />
+                {/* TODO: add your company logo component here */}
+                <CompanyIcon size={35} />
+                {/* TODO: put your company name here */}
                 <span className="text-lg font-semibold hidden sm:block">
-                  Boilerbase
+                  MyCompany
                 </span>
               </div>
             </Link>
@@ -24,11 +27,9 @@ export const Footer = () => {
             <Link href="/about" passHref>
               <span className="hover:underline cursor-pointer">About</span>
             </Link>
-            <Link href="mailto:help@boilerbase.io" passHref>
+            {/* TODO: Make this send an email to your company's support email */}
+            <Link href="mailto:help@yourcompany.io" passHref>
               <span className="hover:underline cursor-pointer">Contact</span>
-            </Link>
-            <Link href="https://boilerbase.featurebase.app" passHref>
-              <span className="hover:underline cursor-pointer">Feedback</span>
             </Link>
             <Link href="/about/privacy" passHref>
               <span className="hover:underline cursor-pointer flex flex-row gap-1">
@@ -36,9 +37,6 @@ export const Footer = () => {
               </span>
             </Link>
           </nav>
-          {/* <p className="text-sm text-gray-500 dark:text-gray-400">
-          © 2024 Acme Inc. All rights reserved.
-        </p> */}
         </div>
       </MaxWidthWrapper>
     </footer>

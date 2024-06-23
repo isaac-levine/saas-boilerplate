@@ -21,6 +21,9 @@ export const MagicLinkEmail = ({
   signInLink: string;
   sentTo: string;
 }) => (
+  // TODO: This is the email that gets sent with magic link for sigining in via email,
+  // feel free to change things as you see fit or keep the same.
+  // You can also just not use email as an Auth option if you want, you can use only Google, GitHub, Discord, whatever you want
   <Html>
     <Head />
     <Preview>Here is your one-time password for login</Preview>
@@ -39,8 +42,9 @@ export const MagicLinkEmail = ({
                 />
               </Column>
               <Column className="w-fit">
+                {/* TODO put your company domain name here */}
                 <Text className="font-semibold tracking-tight">
-                  boilerbase.io
+                  MyCompany.io
                 </Text>
               </Column>
             </Row>
@@ -64,7 +68,8 @@ export const MagicLinkEmail = ({
                 "This code will expire within 24 hours. If you have not requested this code, kindly contact support promptly at the following email address: support@brndndiaz.dev."
               }
             </Text>
-            <Text>— boilerbase.io</Text>
+            {/* Change this to say your company's domain/name */}
+            <Text>— MyCompany.io</Text>
           </Section>
         </Container>
       </Body>

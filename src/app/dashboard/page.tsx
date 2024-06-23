@@ -17,7 +17,8 @@ export default async function Component() {
   if (!user) {
     return (
       <div className="flex flex-col items-center h-screen ">
-        <title>Dashboard • BoilerBase</title>
+        {/* TODO: change the second part of this <title> tag to your Company name */}
+        <title>Dashboard • MyCompany</title>
         <div className="max-w-md p-8 bg-white rounded-lg shadow-lg dark:bg-gray-800 mt-12 mx-8">
           <div className="space-y-4 text-center">
             <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100">
@@ -44,29 +45,21 @@ export default async function Component() {
   // User is signed in, so we can display the dashboard
   return (
     <div className="flex min-h-screen">
-      <title>Dashboard • BoilerBase</title>
+      {/* TODO: change the second part of this <title> tag to your Company name */}
+      <title>Dashboard • MyCompany</title>
       <div className="flex-1 bg-gray-100 dark:bg-gray-950 p-8">
         <main className="p-6 space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="flex flex-col gap-4">
+            <Card>
               <CardHeader className="flex items-center justify-between">
-                {gotBoilerplate ? (
-                  <CardTitle>Already got Boilerplate</CardTitle>
-                ) : (
-                  <CardTitle>Claim your Boilerplate</CardTitle>
-                )}
-                <CodeXml className="w-5 h-5 text-gray-500 dark:text-gray-400" />
+                <CardTitle>Listed Feature Requests</CardTitle>
+                <LayoutDashboard className="w-5 h-5 text-gray-500 dark:text-gray-400" />
               </CardHeader>
-              <CardContent className="flex items-center justify-center">
-                {gotBoilerplate ? (
-                  <Link className={buttonVariants()} href="/form">
-                    Get Boilerplate
-                  </Link>
-                ) : (
-                  <Link className={buttonVariants()} href="/form">
-                    Get Boilerplate
-                  </Link>
-                )}
+              <CardContent>
+                <div className="text-3xl font-bold">+2350</div>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  +180.1% from last month
+                </p>
               </CardContent>
             </Card>
             <Card>
@@ -83,13 +76,13 @@ export default async function Component() {
             </Card>
             <Card>
               <CardHeader className="flex items-center justify-between">
-                <CardTitle>Listed Beta Tests</CardTitle>
-                <FlaskConical className="w-5 h-5 text-gray-500 dark:text-gray-400" />
+                <CardTitle>Listed Feature Requests</CardTitle>
+                <LayoutDashboard className="w-5 h-5 text-gray-500 dark:text-gray-400" />
               </CardHeader>
               <CardContent>
-                <div className="text-3xl font-bold">+12,234</div>
+                <div className="text-3xl font-bold">+2350</div>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  +19% from last month
+                  +180.1% from last month
                 </p>
               </CardContent>
             </Card>

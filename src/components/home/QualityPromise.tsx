@@ -21,6 +21,10 @@ import {
 } from "@/components/ui/drawer";
 import { useWindowSize } from "usehooks-ts";
 
+// This button/component is completely optional, I use it on boilerbase.io as the "Quality Promise" button on the hero section of my home page.
+// On mobile, this opens up as a drawer from the bottom
+
+// TODO: Either remove this component from the home hero section or personalize it to be your own
 export function QualityPromise() {
   const [open, setOpen] = React.useState(false);
   const { width = 0, height = 0 } = useWindowSize();
@@ -30,42 +34,18 @@ export function QualityPromise() {
     return (
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogTrigger asChild>
-          <Button variant="secondary">Our quality promise</Button>
+          <Button variant="secondary">Our Quality Promise</Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[525px]">
           <DialogHeader>
-            <DialogTitle className="mb-3">
-              By developers, for developers.
-            </DialogTitle>
+            <DialogTitle className="mb-3">Our quality promise.</DialogTitle>
             <DialogDescription>
-              Boilerbase was founded with the goal of enabling founders to ship
-              their software products as fast as possible. We believe that the
-              best way to do this is by providing high-quality, custom-tailored
-              boilerplates that will allow you to hit the ground running and
-              focus on what makes your idea special. Our team is dedicated to
-              ensuring that every boilerplate on our platform meets our high
-              standards of quality and usability. We are constantly working to
-              improve our platform and provide you with the best possible
-              experience. If you have any feature requests or suggestions on how
-              we can be better, please submit feedback{" "}
-              <a
-                className="font-bold underline text-blue-500 dark:text-blue-400"
-                href="https://boilerbase.featurebase.app/"
-              >
-                here
-              </a>
-              . For any other questions or concerns, please don&apos;t hesitate
-              to contact us at{" "}
-              <a
-                href="mailto:help@boilerbase.io"
-                className="font-bold text-blue-500 dark:text-blue-400"
-              >
-                help@boilerbase.io
-              </a>
-              .
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+              quae excepturi maxime hic sequi quaerat eum accusamus odio ipsa
+              laboriosam neque ipsam tempora minima quod, suscipit soluta
+              voluptatem fugit ratione.
             </DialogDescription>
           </DialogHeader>
-          {/* <ProfileForm /> */}
         </DialogContent>
       </Dialog>
     );
@@ -80,17 +60,12 @@ export function QualityPromise() {
         <DrawerHeader className="text-left">
           <DrawerTitle className="mb-3">Our Promise to You</DrawerTitle>
           <DrawerDescription>
-            Boilerbase is committed to providing you with the best quality web
-            app boilerplates on the market. We guarantee that every asset on our
-            platform is verified by our team to ensure our highest quality
-            standards. Each boilerplate featured on the site has been through a
-            rigorous review process to ensure that it meets our quality
-            criteria. We are constantly working to improve our platform and
-            provide you with the best possible experience. If you have any
-            questions or concerns, please don&apos;t hesitate to contact us.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem ad qui error? Ipsum corporis, doloribus cumque saepe
+            eveniet quaerat sit quam incidunt enim quibusdam eligendi alias
+            possimus ratione autem veritatis!
           </DrawerDescription>
         </DrawerHeader>
-        {/* <ProfileForm className="px-4" /> */}
         <DrawerFooter className="pt-2">
           <DrawerClose asChild>
             <Button variant="outline">Close</Button>

@@ -51,7 +51,8 @@ export default function SignIn() {
   }
   return (
     <div className="w-full lg:grid lg:min-h-[600px] h-screen select-none">
-      <title>Sign In • BoilerBase</title>
+      {/* TODO: change the second part of this <title> tag to your Company name */}
+      <title>Sign In • MyCompany</title>
 
       <div className="flex items-center justify-center py-12 bg-gradient-to-b from-background to-foreground/20 h-full px-12">
         <div className="mx-auto grid w-[350px] gap-6 ">
@@ -70,7 +71,9 @@ export default function SignIn() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="joe@boilerbase.com"
+                  // TODO: Change this placeholder to be your company's email domain
+                  // or just remove the placeholder, or just put a @gmail email or something
+                  placeholder="joe@yourcompany.com"
                   required
                 />
               </div>

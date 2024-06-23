@@ -1,7 +1,3 @@
-![icon (5)](https://github.com/isaac-levine/boilerbase/assets/80065258/d9dcdfa5-1eae-4f64-8eb1-3afc33422157)
-
-# saas-boilerplate
-
 ## Welcome to your SaaS Boilerplate
 
 ## Getting Started
@@ -17,7 +13,7 @@ To get started with the SaaS Boilerplate, follow the steps below:
 2. Navigate to the project directory:
 
    ```shell
-   cd boilerbase/saas-boilerplate
+   cd saas-boilerplate
    ```
 
 3. Install the dependencies:
@@ -43,5 +39,3 @@ To get started with the SaaS Boilerplate, follow the steps below:
 7. Open your browser and visit `http://localhost:3000` to see the application running.
 
 8. You're all set! You can now start customizing the SaaS Boilerplate to fit your needs.
-
-For more information on how to use the SaaS Boilerplate, refer to the [documentation](https://github.com/isaac-levine/boilerbase/docs).

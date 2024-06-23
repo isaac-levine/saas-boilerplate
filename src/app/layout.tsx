@@ -11,16 +11,14 @@ import { AuthProvider } from "@/components/providers/auth-provider";
 import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
-  title: "Boilerbase",
-  description: "Your one-stop shop for web app boilerplates and templates",
-  icons: ["/boilerbase-icon.png"],
+  // TODO put your title, description, and path to your app's icon
+  // this is what will show in the tab on the browser
+  title: "SaaS Boilerplate",
+  description: "This is a SaaS boilerplate built with Next.js and Prisma.",
+  icons: ["/your-icon.png"],
 };
 import NavigationBar from "@/components/NavigationBar";
 import { Footer } from "@/components/Footer";
-import { useSession } from "next-auth/react";
-import { getSignedInUser } from "@/lib/auth/helper";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/lib/auth/options";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 export const viewport: Viewport = {
   themeColor: "#000000",
@@ -35,9 +33,6 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // const session = await getSignedInUser();
-  // const session = await getServerSession(authOptions)
-  // console.log(session)
   return (
     <html lang="en" suppressHydrationWarning>
       <AuthProvider>
@@ -47,6 +42,7 @@ export default async function RootLayout({
             inter.className
           )}
         >
+          {/* Make sure default theme is confugured to what you want. For me, dark is the default */}
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
@@ -54,6 +50,8 @@ export default async function RootLayout({
             disableTransitionOnChange
           >
             <main className="relative flex flex-col min-h-screen">
+              {/* TODO change this loader to be whatever color you want */}
+              {/* Feel free to use a different loader, I downloaded NextTopLoader which I think is a very clean solution */}
               <NextTopLoader
                 color="#2563eb"
                 initialPosition={0.08}

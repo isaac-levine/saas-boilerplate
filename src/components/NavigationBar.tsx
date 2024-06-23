@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Settings } from "lucide-react";
 import * as React from "react";
-import BoilerbaseIcon from "./BoilerbaseIcon";
+import CompanyIcon from "./CompanyIcon";
 import { Button, buttonVariants } from "./ui/button";
 import {
   Sheet,
@@ -46,7 +46,7 @@ export default function NavigationBar() {
       <Sheet>
         <SheetTrigger className="sm:hidden items-start justify-start w-1/3">
           {/* <Link className="flex items-center gap-2" href="/"> */}
-          {/* <BoilerbaseIcon /> */}
+          {/* <CompanyIcon /> */}
           {/* <span className="font-semibold text-xl">Boilerbase</span> */}
           {/* </Link> */}
           <Menu size={34}></Menu>
@@ -56,8 +56,10 @@ export default function NavigationBar() {
             <SheetTitle className="flex items-center justify-center">
               <SheetClose asChild>
                 <Link className="flex items-center gap-2" href="/">
-                  <BoilerbaseIcon size={35} />
-                  <span className="font-semibold text-xl">Boilerbase</span>
+                  {/* TODO replace with your company logo */}
+                  <CompanyIcon size={35} />
+                  {/* TODO replace with your company name */}
+                  <span className="font-semibold text-xl">MyCompany</span>
                 </Link>
               </SheetClose>
             </SheetTitle>
@@ -82,22 +84,6 @@ export default function NavigationBar() {
                 Dashboard
               </Link>
             </SheetClose>
-            {/* <SheetClose asChild>
-              <Link
-                className="hover:underline hover:underline-offset-4"
-                href="/dashboard/feature-marketplace"
-              >
-                Feature Marketplace
-              </Link>
-            </SheetClose>
-            <SheetClose asChild>
-              <Link
-                className="hover:underline hover:underline-offset-4"
-                href="/dashboard/post-a-feature"
-              >
-                Post a Feature
-              </Link>
-            </SheetClose> */}
             <DarkModeToggle />
             <SheetClose asChild>
               <Link
@@ -123,34 +109,14 @@ export default function NavigationBar() {
         className="flex items-center justify-center gap-2 w-1/3 sm:w-auto"
         href="/"
       >
-        <BoilerbaseIcon size={32} />
-        <span className="sm:block font-semibold text-xl hidden">
-          Boilerbase
-        </span>
+        <CompanyIcon size={32} />
+        {/* TODO replace with your company name */}
+        <span className="sm:block font-semibold text-xl hidden">MyCompany</span>
       </Link>
       <nav
         className="hidden md:flex items-center gap-6 text-sm font-medium"
         ref={navRef}
-      >
-        {/* <Link
-          className="hover:underline hover:underline-offset-4 font-semibold"
-          href="/dashboard"
-        >
-          Dashboard
-        </Link> */}
-        {/* <Link
-          className="hover:underline hover:underline-offset-4"
-          href="/dashboard/feature-marketplace"
-        >
-          Feature Marketplace
-        </Link>
-        <Link
-          className="hover:underline hover:underline-offset-4"
-          href="/dashboard/post-a-feature"
-        >
-          Post a Feature
-        </Link> */}
-      </nav>
+      ></nav>
       {session.data?.user ? (
         <div className="flex items-center justify-end gap-2 w-1/3 sm:w-auto">
           <DarkModeToggle className="hidden sm:block"></DarkModeToggle>
@@ -174,7 +140,6 @@ export default function NavigationBar() {
           </Link>
           <Link
             href="/api/auth/signout"
-            // onClick={() => signOut}
             className={`${buttonVariants({
               variant: "outline",
             })} border-[0px] sm:border-[1px] dark:bg-foreground/10 border-foreground/10 `}

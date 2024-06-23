@@ -38,6 +38,8 @@ export interface Like {
   listingId: string;
 }
 
+// This component represents a more detailed view of a listing
+// TODO: Use listing, or change this to a post or whatever is relevant to your product
 export default function Component() {
   const pathname = usePathname();
   const id = pathname.split("/").pop(); // Extract the listing ID from the URL
@@ -95,7 +97,8 @@ export default function Component() {
 
   return (
     <MaxWidthWrapper>
-      <title>{`${listing?.title} • BoilerBase`}</title>
+      {/* TODO: change the second part of this <title> tag to your Company name */}
+      <title>{`${listing?.title} • MyCompany`}</title>
       <div className="py-4 sm:py-10">
         <div className="max-w-2xl mx-auto shadow-md">
           <Card>

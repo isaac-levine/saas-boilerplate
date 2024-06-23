@@ -28,7 +28,8 @@ export default async function Component() {
 
   return (
     <MaxWidthWrapper>
-      <title>Settings • Boilerbase</title>
+      {/* TODO: change the second part of this <title> tag to your Company name */}
+      <title>Settings • MyCompany</title>
       {user ? (
         <div className="mx-auto mb-32 mt-32 max-w-5xl sm:mt-56 px-6 lg:px-8 sm:text-center flex flex-col gap-6">
           <h1 className="text-4xl font-extrabold mb-6">

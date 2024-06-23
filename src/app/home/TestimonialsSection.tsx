@@ -1,6 +1,7 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 const TestimonialsSection = () => {
+  // TODO: personalize this testimonials section, remove it, or change it completely
   return (
     <section id="testimonials" className="w-full py-12 md:py-24 lg:py-32">
       <MaxWidthWrapper>
@@ -14,7 +15,8 @@ const TestimonialsSection = () => {
                 Many happy farmers
               </h2>
               <p className="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                Hear from developers who have used Boilerbase to build their
+                {/* TODO: Replace MyCompany with your company, or just remove this componenet */}
+                Hear from developers who have used MyCompany to build their
                 apps.
               </p>
             </div>

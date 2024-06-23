@@ -2,6 +2,8 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 
 export default function Page() {
   return (
+    // TODO: Replace this with some information about your company, founder, etc.
+    // Or just delete this page and all links to it.
     <main className="w-full">
       <MaxWidthWrapper>
         <section className="w-full py-12 md:py-24 lg:py-32">
@@ -9,17 +11,17 @@ export default function Page() {
             <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
               <div className="space-y-4">
                 <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
-                  About Boilerbase
+                  About Us
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  Bringing Transparency and Quality to Web App Boilerplates
+                  Our mission statement
                 </h2>
                 <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Boilerbase is a project dedicated to providing developers with
-                  high-quality, transparent, and community-vetted web
-                  application boilerplates. Our mission is to simplify the
-                  initial setup process and ensure that developers can start
-                  their projects with a solid foundation.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  ac ligula ac orci ultrices varius. Donec sit amet risus
+                  fermentum, ultricies sapien ac, ultricies metus. Sed nec
+                  ultrices eros. Donec sit amet risus fermentum, ultricies
+                  sapien ac, ultricies metus. Sed nec ultrices eros.
                 </p>
               </div>
               <div className="grid gap-8">
@@ -27,22 +29,22 @@ export default function Page() {
                   <CardHeader>
                     <Avatar className="w-16 h-16">
                       <AvatarImage
-                        alt="Isaac Levine"
+                        alt="First Last"
                         src="/placeholder-avatar.jpg"
                       />
-                      <AvatarFallback>IL</AvatarFallback>
+                      <AvatarFallback>FL</AvatarFallback>
                     </Avatar>
                   </CardHeader>
                   <CardContent className="space-y-2">
-                    <div className="font-semibold">Isaac Levine</div>
+                    <div className="font-semibold">First Last</div>
                     <p className="text-gray-500 dark:text-gray-400">
-                      Founder, Boilerbase
+                      Founder, Company
                     </p>
                     <p>
-                      Isaac is a software developer and an active member of the
-                      web development community. He created Boilerbase to help
-                      developers save time and effort in setting up their
-                      projects.
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Eius, sunt voluptas quae saepe laborum aliquid accusamus
+                      eveniet earum praesentium illo ut amet debitis fugiat quod
+                      officiis aspernatur est sequi eum.
                     </p>
                   </CardContent>
                 </Card>
@@ -63,50 +65,46 @@ export default function Page() {
                   Transparency, Quality, and Community
                 </h2>
                 <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  At Boilerbase, we believe in providing transparent and
-                  high-quality boilerplates that are vetted by the developer
-                  community. We strive to create a collaborative environment
-                  where developers can contribute, share their expertise, and
-                  collectively improve the tools they use.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                  nobis accusamus iure est vero fugiat quae facere doloribus
+                  debitis? Voluptates nesciunt sapiente eum mollitia dolorum
+                  explicabo voluptatum ullam officiis nihil.
                 </p>
               </div>
               <div className="grid gap-8">
                 <div className="flex items-center gap-4">
                   <ClipboardCheckIcon className="w-10 h-10 text-primary" />
                   <div>
-                    <div className="font-semibold">
-                      Transparent Boilerplates
-                    </div>
+                    <div className="font-semibold">Value 1</div>
                     <p className="text-gray-500 dark:text-gray-400">
-                      All Boilerbase boilerplates are open-source and thoroughly
-                      documented, ensuring developers can understand and
-                      customize them to their needs.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quo nulla earum nam distinctio incidunt minima a labore
+                      reiciendis sint magni atque quae in delectus veniam, porro
+                      vel harum velit. Autem.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <RocketIcon className="w-10 h-10 text-primary" />
                   <div>
-                    <div className="font-semibold">
-                      Community-Driven Quality
-                    </div>
+                    <div className="font-semibold">Value 2</div>
                     <p className="text-gray-500 dark:text-gray-400">
-                      Our boilerplates are reviewed and improved by a community
-                      of experienced developers, ensuring they meet the highest
-                      standards of quality and best practices.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quo nulla earum nam distinctio incidunt minima a labore
+                      reiciendis sint magni atque quae in delectus veniam, porro
+                      vel harum velit. Autem.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <UsersIcon className="w-10 h-10 text-primary" />
                   <div>
-                    <div className="font-semibold">
-                      Collaborative Environment
-                    </div>
+                    <div className="font-semibold">Value 3</div>
                     <p className="text-gray-500 dark:text-gray-400">
-                      Boilerbase encourages developers to contribute, share
-                      their knowledge, and work together to create the best
-                      possible tools for the community.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quo nulla earum nam distinctio incidunt minima a labore
+                      reiciendis sint magni atque quae in delectus veniam, porro
+                      vel harum velit. Autem.
                     </p>
                   </div>
                 </div>
